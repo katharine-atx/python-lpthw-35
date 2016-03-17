@@ -1,5 +1,5 @@
 print ("Mary had a little lamb.")
-print ("Its fleece was white as %s." % 'snow')
+print ("Its fleece was white as %s." % 'snow') #Note: % syntax for string formatting is being phased out
 print ("And everywhere that Mary went.")
 print ("." * 10) #What? What did that do?
 

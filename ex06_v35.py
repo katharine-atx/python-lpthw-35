@@ -1,3 +1,4 @@
+# Python 2.7 to 3.5: The % string format syntax will be phased out but is still supported.
 x = "There are %d types of people." % 10
 binary = "binary"
 do_not = "don't"

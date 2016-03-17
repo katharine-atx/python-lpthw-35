@@ -1,5 +1,6 @@
 # Setting variables and given values
 # Version 2.7 to 3.5: Added an int() for average passengers to return an integer
+# Alternatively, you could use a "//" rather than "/" to indicate integer division (rounds down)
 
 cars = 100 
 space_in_a_car = 4.0 #numeric

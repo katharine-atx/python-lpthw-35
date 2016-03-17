@@ -1,3 +1,8 @@
+#Python 2.7 to 3.5: the % string format syntax is still supported but will be phased out.
+#New method: 'My name is {} and I have {} pets'.format(variable0,variable1)
+#-or- format it for understandability to refer to ID variables:
+#'My name is {name} & I have {n} pets.'.format(name=name,n=num_pets)
+
 my_name = 'Your Name'
 my_age = 27 # not a lie
 my_height = 65.0 # inches
