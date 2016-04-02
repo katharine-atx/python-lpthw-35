@@ -1,4 +1,5 @@
 # Version 2.7 to 3.5: print()
+#To be run from Python terminal:
 def break_words(stuff):
 	"""This function will break up words for us. """
 	words = stuff.split(' ')
