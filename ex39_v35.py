@@ -1,4 +1,4 @@
-# Version 2.7 to 3.5: print()
+# Version 2.7 to 3.5: print(), use {}/.format() instead of % foramtters.
 # dicts (dictionaries)
 
 # Here's a list for comparison...
@@ -83,11 +83,13 @@ for state, abbrev in states.items():
 	print("{} is abbreviated {}" .format(state, abbrev))
 	
 # print every city in state
-Add here
+print('-' * 10)
+for abbrev, city in cities.items():
+	print("{} has the city {}" .format(abbrev, city))
 
 # now do both at the same time
 print('-' * 10)
-for state, abbrev in cities.items():
+for state, abbrev in states.items():
 	print("{} state is abbreviated {} and has city {}" .format(
 		state, abbrev, cities[abbrev]))
 
@@ -97,7 +99,7 @@ print('-' * 10)
 state = states.get('Texas')
 
 if not state:
-	print("Sorry, no Texas")
+	print("Sorry, no Texas.")
 	
 # get a city with a default value
 city = cities.get('TX', 'Does Not Exist')
