@@ -7,19 +7,19 @@ class Animal(object):
 	
 ## Dog is-a class of Animal
 class Dog(Animal):
-	def__init__(self, name):
+	def __init__(self, name):
 		## Dog has-a name
 		self.name = name
 
 ## Cat is-a class of Animal
 class Cat(Animal):
-	def__init__(self, name):
+	def __init__(self, name):
 		## Cat has-a name
 		self.name = name
 		
 ## Person is-a object
 class Person(object):
-	def__init__(self, name):
+	def __init__(self, name):
 		## Person has-a name
 		self.name = name
 		## Person has-a pet...default "no"
@@ -27,7 +27,7 @@ class Person(object):
 		
 ## Employee is-a class of Person
 class Employee(Person):
-	def__init__(self, name, salary):
+	def __init__(self, name, salary):
 		## Refers back to Person class-object .name expression
 		super().__init__(name)
 		## Employee has-a salary
