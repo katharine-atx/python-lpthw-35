@@ -1,11 +1,10 @@
 # Version 2.7 to 3.5: print()
 
-# Composition example (as opposed to inheritance) for the 
-# same output...
+# Composition used to same effect as the inheritane example (ex44d)...
 
 class Other(object):
 	def override(self):
-		print("OTHER override()")
+		print("OTHER override")
 	def implicit(self):
 		print("OTHER implicit()")
 	def altered(self):
@@ -22,11 +21,9 @@ class Child(object):
 		print("CHILD, BEFORE OTHER altered()")
 		self.other.altered()
 		print("CHILD, AFTER OTHER altered()")
-		
+
 son = Child()
 
 son.implicit()
 son.override()
 son.altered()
-	
-
