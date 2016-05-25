@@ -26,7 +26,7 @@ def test_room_paths():
 def test_map():
 	start = Room("Start", "You can go west and down a hole.")
 	west = Room("Trees", "There are trees here, you can go east.")
-	down = ("Dungeon", "It's dark down here, you can go up.")
+	down = Room("Dungeon", "It's dark down here, you can go up.")
 	
 	start.add_paths({'west': west, 'down':down})
 	west.add_paths({'east': start})
